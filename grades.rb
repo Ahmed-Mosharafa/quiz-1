@@ -5,7 +5,7 @@ def order_grades (*attributes)
 	array = []
 	for i in 0..attributes.length
 		temp = attributes[i]
-		if temp != array
+		if array.include?
 			array[] << temp
 		for j in 0..attributes.length 
 			if temp == attributes[j]
